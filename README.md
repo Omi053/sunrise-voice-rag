@@ -22,7 +22,7 @@ Setups done-
 cd sunrise-voice-rag
 
 ls input/
-# → investor_sample.mp3   SunriseAMC_FAQ.pdf
+ → investor_sample.mp3   SunriseAMC_FAQ.pdf
 
 python -m venv .venv
 source .venv/bin/activate       
