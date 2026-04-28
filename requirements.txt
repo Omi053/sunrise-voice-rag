@@ -1,0 +1,9 @@
+# ----- Core pipeline -----
+faster-whisper==1.0.3        # Part 1: ASR (CTranslate2 backend, int8 friendly)
+chromadb==0.5.5              # Part 2: local persistent vector store
+sentence-transformers==3.0.1 # Part 2: MiniLM embeddings
+ollama==0.3.3                # Part 2: local LLM client (Llama 3.2 / Mistral)
+pypdf==4.3.1                 # Part 2: PDF text extraction
+
+# ----- Tooling -----
+pytest==8.3.2                # tests/test_eval.py
