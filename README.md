@@ -1,5 +1,7 @@
-# Sunriseproject
 
+🌅 Sunrise Project
+
+Voice-powered investor Q&A — transcribes audio, retrieves answers from a PDF knowledge base, and returns structured JSON summaries via a local RAG pipeline.
 Repository Layout-
 
 Taking in the inputs- 
@@ -11,6 +13,7 @@ Source- Transcibe, Ingest , Rag, Pipeline , Utils
 Transcribe- Faster Whisper
 Ingest- PDF Broken down for Q&A chunks- ChromaDB
 Rag- Retrieve+ Ollama
+
 
 Installed FFMEG
 
@@ -34,9 +37,16 @@ command builds vector index- transcribes from voice to write output transcript
 Sends transcript to RAG engine to write output (JSON)
 Prints a summary (includes latency)
 
-Failure cases would be-
-File is missing, empty audio, File is pure silent, Whispering, query is out of scope
-Ollama may not run, FAQ is in unexpected format
+Failure Cases
+A few things to watch out for:
 
+Missing or silent audio file — pipeline will exit early
+Query is out of scope — Ollama will say so rather than hallucinate
+Ollama isn't running — you'll get a connection error, just run ollama serve
+FAQ PDF in an unexpected format — ingest will skip bad sections and warn you
+
+Notes
+See Decisions.md for model choices and tradeoffs. The ChromaDB index is saved locally so subsequent runs are faster — delete chroma_store/ if you want to rebuild it from scratch.
 
 Also see- Decisions.d for model selection, strategy, tradeoff. scalling issues
+
