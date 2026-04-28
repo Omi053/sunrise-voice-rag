@@ -1,0 +1,7 @@
+faster-whisper==1.2.1
+chromadb==1.5.8
+sentence-transformers==5.4.1
+ollama==0.6.1
+pypdf==6.10.2
+pymupdf4llm==1.27.2.3
+pytest==9.0.3
