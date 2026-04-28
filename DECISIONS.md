@@ -44,9 +44,9 @@ Q&A-level chunking + structural citation. A local LLM is the right fit for a 10-
 
 Evaluation Design
 The tests are split into two parts so failures are easier to trace.
-Part 1 — Does retrieval work?
+Part 1- Does retrieval work?
 We build the Chroma index once and then throw 8 different queries at it. Each query asks the same thing as a FAQ question but in different words — the way an investor would actually phrase it. The test passes if the right FAQ chunk comes back as the top result. This is the most important thing to get right in a RAG system.
-Part 2 — Do the failure cases behave correctly?
+Part 2- Do the failure cases behave correctly?
 Two quick checks, no LLM involved:
 
 Ask something completely off-topic: the system should reject it
