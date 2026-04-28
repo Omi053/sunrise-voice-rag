@@ -4,7 +4,7 @@ The pipeline has 3 divisions - Ingestion, Transcription, and RAG.
 
 Ingestion & Chunking Strategy\
 Ingestion stores given data into a vector database, grouping similar vectors using ChromaDB. The core challenge here is how to chunk the PDF.
-Brute force chunking was ruled out — chunks won't be effective enough for the assistant.\
+Brute force chunking was ruled out (chunks won't be effective enough for the assistant)).\
 Q&A-based chunking was chosen instead. One chunk per Q/A pair (10 chunks for 10 questions) is ideal because it gives precise citation and smaller prompts. All other strategies would either break citation or retrieve irrelevant Q&A pairs, leading to longer, noisier LLM prompts.
 \
 A regex pattern is used to split the FAQ : simple and effective. The pattern detects where a question starts and ends, with the answer following directly below.\
