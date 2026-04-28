@@ -1,0 +1,294 @@
+{
+  "ok": true,
+  "transcript": {
+    "transcript": "Hi, I recently invested in an equity mutual fund through my SIP. I want to know, if I redeem my units after 14 months, how will my gains be taxed? And will any TDS be deducted?",
+    "language": "en",
+    "duration_sec": 13.728,
+    "avg_confidence": 0.9699,
+    "words": [
+      {
+        "text": "Hi,",
+        "start": 0.0,
+        "end": 0.38,
+        "confidence": 0.8861
+      },
+      {
+        "text": "I",
+        "start": 0.72,
+        "end": 0.82,
+        "confidence": 0.9861
+      },
+      {
+        "text": "recently",
+        "start": 0.82,
+        "end": 1.14,
+        "confidence": 0.9976
+      },
+      {
+        "text": "invested",
+        "start": 1.14,
+        "end": 1.72,
+        "confidence": 0.9976
+      },
+      {
+        "text": "in",
+        "start": 1.72,
+        "end": 1.92,
+        "confidence": 0.9984
+      },
+      {
+        "text": "an",
+        "start": 1.92,
+        "end": 2.06,
+        "confidence": 0.994
+      },
+      {
+        "text": "equity",
+        "start": 2.06,
+        "end": 2.34,
+        "confidence": 0.8001
+      },
+      {
+        "text": "mutual",
+        "start": 2.34,
+        "end": 2.74,
+        "confidence": 0.9699
+      },
+      {
+        "text": "fund",
+        "start": 2.74,
+        "end": 3.08,
+        "confidence": 0.9948
+      },
+      {
+        "text": "through",
+        "start": 3.08,
+        "end": 3.32,
+        "confidence": 0.9558
+      },
+      {
+        "text": "my",
+        "start": 3.32,
+        "end": 3.5,
+        "confidence": 0.9945
+      },
+      {
+        "text": "SIP.",
+        "start": 3.5,
+        "end": 3.96,
+        "confidence": 0.923
+      },
+      {
+        "text": "I",
+        "start": 4.76,
+        "end": 5.3,
+        "confidence": 0.9888
+      },
+      {
+        "text": "want",
+        "start": 5.3,
+        "end": 5.46,
+        "confidence": 0.9964
+      },
+      {
+        "text": "to",
+        "start": 5.46,
+        "end": 5.62,
+        "confidence": 0.9967
+      },
+      {
+        "text": "know,",
+        "start": 5.62,
+        "end": 5.82,
+        "confidence": 0.9915
+      },
+      {
+        "text": "if",
+        "start": 6.24,
+        "end": 6.36,
+        "confidence": 0.9668
+      },
+      {
+        "text": "I",
+        "start": 6.36,
+        "end": 6.46,
+        "confidence": 0.9976
+      },
+      {
+        "text": "redeem",
+        "start": 6.46,
+        "end": 6.7,
+        "confidence": 0.9726
+      },
+      {
+        "text": "my",
+        "start": 6.7,
+        "end": 6.94,
+        "confidence": 0.9985
+      },
+      {
+        "text": "units",
+        "start": 6.94,
+        "end": 7.2,
+        "confidence": 0.9799
+      },
+      {
+        "text": "after",
+        "start": 7.2,
+        "end": 7.52,
+        "confidence": 0.998
+      },
+      {
+        "text": "14",
+        "start": 7.52,
+        "end": 7.92,
+        "confidence": 0.954
+      },
+      {
+        "text": "months,",
+        "start": 7.92,
+        "end": 8.24,
+        "confidence": 0.9941
+      },
+      {
+        "text": "how",
+        "start": 8.72,
+        "end": 8.82,
+        "confidence": 0.9897
+      },
+      {
+        "text": "will",
+        "start": 8.82,
+        "end": 8.92,
+        "confidence": 0.9974
+      },
+      {
+        "text": "my",
+        "start": 8.92,
+        "end": 9.08,
+        "confidence": 0.999
+      },
+      {
+        "text": "gains",
+        "start": 9.08,
+        "end": 9.26,
+        "confidence": 0.9792
+      },
+      {
+        "text": "be",
+        "start": 9.26,
+        "end": 9.5,
+        "confidence": 0.9977
+      },
+      {
+        "text": "taxed?",
+        "start": 9.5,
+        "end": 10.16,
+        "confidence": 0.9906
+      },
+      {
+        "text": "And",
+        "start": 10.82,
+        "end": 11.24,
+        "confidence": 0.8721
+      },
+      {
+        "text": "will",
+        "start": 11.24,
+        "end": 11.34,
+        "confidence": 0.9926
+      },
+      {
+        "text": "any",
+        "start": 11.34,
+        "end": 11.58,
+        "confidence": 0.9764
+      },
+      {
+        "text": "TDS",
+        "start": 11.58,
+        "end": 12.02,
+        "confidence": 0.8912
+      },
+      {
+        "text": "be",
+        "start": 12.02,
+        "end": 12.26,
+        "confidence": 0.9013
+      },
+      {
+        "text": "deducted?",
+        "start": 12.26,
+        "end": 12.84,
+        "confidence": 0.9974
+      }
+    ],
+    "segments": [
+      {
+        "id": 1,
+        "start": 0.0,
+        "end": 3.96,
+        "text": "Hi, I recently invested in an equity mutual fund through my SIP.",
+        "avg_logprob": -0.1208
+      },
+      {
+        "id": 2,
+        "start": 4.76,
+        "end": 10.16,
+        "text": "I want to know, if I redeem my units after 14 months, how will my gains be taxed?",
+        "avg_logprob": -0.1208
+      },
+      {
+        "id": 3,
+        "start": 10.82,
+        "end": 12.84,
+        "text": "And will any TDS be deducted?",
+        "avg_logprob": -0.1208
+      }
+    ],
+    "warning": null,
+    "model": "base"
+  },
+  "rag": {
+    "query": "Hi, I recently invested in an equity mutual fund through my SIP. I want to know, if I redeem my units after 14 months, how will my gains be taxed? And will any TDS be deducted?",
+    "answer": "If you redeem your units after 14 months, the capital gain would be considered a Long-Term Capital Gain (LTCG) [FAQ Q9]. As per current tax laws, LTCG is taxed at 12.5% on gains exceeding Rs. 1.25 lakh in a financial year.\n\nHowever, since you've held the units for more than 12 months, there's no TDS deduction applicable to your redemption [FAQ Q10].",
+    "sources": [
+      "Q9",
+      "Q10",
+      "Q8"
+    ],
+    "out_of_scope": false,
+    "llm_model": "llama3.2:3b",
+    "error": null,
+    "retrieved": [
+      {
+        "question_number": 9,
+        "question": "What is the tax treatment on equity mutual fund gains?",
+        "distance": 0.3157
+      },
+      {
+        "question_number": 10,
+        "question": "Will TDS be deducted on mutual fund redemptions?",
+        "distance": 0.3945
+      },
+      {
+        "question_number": 8,
+        "question": "Can I redeem only a part of my investment?",
+        "distance": 0.5385
+      }
+    ]
+  },
+  "latency_sec": {
+    "ingest": 0.0,
+    "transcribe": 2.8799,
+    "retrieve": 0.5146,
+    "generate": 2.4634,
+    "rag_total": 2.9783
+  },
+  "config": {
+    "whisper_model": "base",
+    "llm_model": "llama3.2:3b",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "top_k": 3
+  }
+}
