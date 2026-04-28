@@ -22,11 +22,11 @@ ls input/
 # → investor_sample.mp3   SunriseAMC_FAQ.pdf
 
 python -m venv .venv
-source .venv/bin/activate         # Windows: .venv\Scripts\activate
+source .venv/bin/activate       
 
 pip install -r requirements.txt
 
-ollama serve &                    # runs the local model server
+ollama serve &                   
 ollama pull llama3.2:3b 
 
 oNCE MAIN CODE is ran-0 
