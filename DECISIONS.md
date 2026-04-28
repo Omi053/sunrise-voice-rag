@@ -1,6 +1,6 @@
 Decisions
 Pipeline Overview\
-The pipeline has 3 divisions — Ingestion, Transcription, and RAG.
+The pipeline has 3 divisions - Ingestion, Transcription, and RAG.
 
 Ingestion & Chunking Strategy\
 Ingestion stores given data into a vector database, grouping similar vectors using ChromaDB. The core challenge here is how to chunk the PDF.
@@ -12,7 +12,7 @@ A regex pattern is used to split the FAQ : simple and effective. The pattern det
 Tradeoffs to be aware of:
 
 If the FAQ grows significantly or contains multi-paragraph answers, single Q-chunks will become too coarse
-We assume the FAQ and investor audio are both in English — otherwise, LLM tuning would be needed\
+We assume the FAQ and investor audio are both in English - otherwise, LLM tuning would be needed\
 
 
 Vector Database
