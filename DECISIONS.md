@@ -44,3 +44,13 @@ Assignment permits the use of GROQ with OLLAMA, which cannot be run.
 One-line summaries- 
 Q&A Level chunking + structural citation- Local LLm is right for a 10-question FAQ
 The section above states what can be added and where it can break.
+
+
+Eval HAS two distinct layers-
+Retrieval layer (offline, no LLM needed)
+Builds the Chroma index once via the session fixture, then runs 8 parametrized queries against it. Each query is a natural language paraphrase of a FAQ question - deliberately worded differently from the source text - and asserts that the correct Q number comes back as top-1. This tests whether the embedding model (all-MiniLM-L6-v2) can semantically match investor intent to the right FAQ chunk, which is the core of the RAG system.
+
+Behaviour layer
+Two tests check the failure branches without touching the LLM: OOS gate rejects an off-topic query, and empty input returns the right error code. The test_e2e_ollama test only runs when RUN_LLM_TESTS=1 is set, keeping the default suite fast and Ollama-free. It checks that the answer cites Q5 and that the LLM didn't just copy the FAQ chunk verbatim (the red flag the rubric calls out explicitly).
+
+The key design decision is to test retrieval and generation separately. If retrieval is wrong, you know the problem is in chunking or embeddings. If retrieval is right but the answer is bad, the problem is in the prompt or the model. Mixing them into one test makes failures harder to diagnose.
