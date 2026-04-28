@@ -1,21 +1,23 @@
 Decisions
-Pipeline Overview
+Pipeline Overview\
 The pipeline has 3 divisions — Ingestion, Transcription, and RAG.
 
 Ingestion & Chunking Strategy\
 Ingestion stores given data into a vector database, grouping similar vectors using ChromaDB. The core challenge here is how to chunk the PDF.
-Brute force chunking was ruled out — chunks won't be effective enough for the assistant.
+Brute force chunking was ruled out — chunks won't be effective enough for the assistant.\
 Q&A-based chunking was chosen instead. One chunk per Q/A pair (10 chunks for 10 questions) is ideal because it gives precise citation and smaller prompts. All other strategies would either break citation or retrieve irrelevant Q&A pairs, leading to longer, noisier LLM prompts.
-A regex pattern is used to split the FAQ — simple and effective. The pattern detects where a question starts and ends, with the answer following directly below.
+\
+A regex pattern is used to split the FAQ — simple and effective. The pattern detects where a question starts and ends, with the answer following directly below.\
+
 Tradeoffs to be aware of:
 
 If the FAQ grows significantly or contains multi-paragraph answers, single Q-chunks will become too coarse
-We assume the FAQ and investor audio are both in English — otherwise, LLM tuning would be needed
+We assume the FAQ and investor audio are both in English — otherwise, LLM tuning would be needed\
 
 
 Vector Database
 ChromaDB — simple, locally persisted, used for POC purposes. Chroma injects metadata as a label alongside each chunk.
-
+\
 Embedding Model
 all-MiniLM-L6-v2
 Chosen because it is efficient, fast, and balanced in performance. It maps sentences and paragraphs into dense vectors, making it ideal for fast semantic search and sentence similarity. Works well in a resource-constrained environment.
